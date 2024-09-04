@@ -1,0 +1,44 @@
+body,
+html {
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background: url("./Images/Space.jpg");
+	background-size: cover;
+	width: 100%;
+	height: 100vh;
+	position: relative;
+}
+
+#chickens_area {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+#rocket {
+	position: absolute;
+	z-index: 4;
+	width: 60px;
+	height: 60px;
+	top: calc(100% - 60px); /* 10px from bottom */
+	left: calc(50% - 30px); /* Center horizontally */
+	background-image: url("./Images/Rocket.png");
+	background-size: cover;
+}
+
+.chicken {
+	position: absolute;
+	width: 70px;
+	height: 60px;
+	background-image: url("./Images/Chicken.png");
+	background-size: cover;
+}
+
+.bullet {
+	position: absolute;
+	width: 20px;
+	height: 30px;
+	background-image: url("./Images/Bullet.png");
+	background-size: cover;
+}
