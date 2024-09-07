@@ -26,7 +26,15 @@ document.addEventListener("keyup", e => {
 
 function moveRocket() {
 	const rect = rocket.getBoundingClientRect();
-
+	// const interval = setInterval(() => {
+	// 	const chickens = document.querySelectorAll(".chicken");
+	// 	chickens.forEach(chicken => {
+	// 		if (isCollide(rocket, chicken)) {
+	// 			chickensArea.removeChild(chicken);
+	// 			clearInterval(interval);
+	// 		}
+	// 	});
+	// }, 20);
 	if (keys.ArrowUp && rect.top > 0) {
 		rocket.style.top = `${rect.top - rocketSpeed}px`;
 	}
